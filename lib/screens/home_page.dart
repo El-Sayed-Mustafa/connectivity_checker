@@ -1,11 +1,10 @@
 import 'package:connectivity_checker/bloc/internet_cubit.dart';
-import 'package:connectivity_checker/screens/widgets/my_description.dart';
+import 'package:connectivity_checker/screens/widgets/my_profile.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:animated_text_kit/animated_text_kit.dart';
 
 class HomePage extends StatelessWidget {
-  const HomePage({Key? key});
+  const HomePage({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -32,7 +31,7 @@ class HomePage extends StatelessWidget {
           builder: (context, state) {
             if (state == InternetState.gained) {
               // Show your information when connected
-              return const AnimatedIntroText();
+              return const MyProfile();
             } else if (state == InternetState.lost) {
               return Image.asset('assets/noInternet.jpg');
             } else {

@@ -1,8 +1,8 @@
 import 'package:animated_text_kit/animated_text_kit.dart';
 import 'package:flutter/material.dart';
 
-class AnimatedIntroText extends StatelessWidget {
-  const AnimatedIntroText({Key? key}) : super(key: key);
+class MyProfile extends StatelessWidget {
+  const MyProfile({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -64,7 +64,7 @@ class AnimatedIntroText extends StatelessWidget {
                   fontSize: 35.0,
                   fontWeight: FontWeight.bold,
                   color: Colors.blue),
-              speed: const Duration(milliseconds: 100),
+              speed: const Duration(milliseconds: 5000),
               textAlign: TextAlign.center,
             ),
           ],
